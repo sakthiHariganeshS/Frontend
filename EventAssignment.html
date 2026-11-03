@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Event listener</title>
+
+</head>
+<body>
+<button id="myButton">Click me</button>
+<input type="text" id="myInput">
+<div id="myDiv"></div>
+</body>
+<script>
+    let btn=document.getElementById("myButton");
+    btn.addEventListener("click",function(){
+        console.log("Button clicked");
+        if(btn.textContent=="Click me"){
+        btn.textContent="Clicked";
+    }
+else{
+    btn.textContent="Click me";
+}
+});
+    btn.addEventListener("mouseover",function(){
+        console.log("Mouse over");
+    });
+    let inp=document.getElementById("myInput");
+    inp.addEventListener("focus",function(){
+        console.log("Input focused");
+    });
+let d=document.getElementById("myDiv");
+d.innerHTML+="<p> HI HI hi</p>";
+
+</script>
+</html>
