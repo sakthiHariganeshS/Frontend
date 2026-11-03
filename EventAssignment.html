@@ -9,6 +9,15 @@
 <button id="myButton">Click me</button>
 <input type="text" id="myInput">
 <div id="myDiv"></div>
+<button>Click me</button>
+    <div>
+    <p>HI</p>
+    <p>HEY
+    </p>
+    <p>
+        BYE
+    </p>
+    </div>
 </body>
 <script>
     let btn=document.getElementById("myButton");
@@ -30,6 +39,14 @@ else{
     });
 let d=document.getElementById("myDiv");
 d.innerHTML+="<p> HI HI hi</p>";
+ let a=document.getElementsByTagName('button')[0];
+        a.addEventListener("click",function(){
+            let bb=document.getElementsByTagName('div')[0];
+            bb.firstElementChild.style.color='red';
+            bb.lastElementChild.style.color='blue';
+            bb.parentElement.style.backgroundColor='green';
+
+        });
 
 </script>
 </html>
