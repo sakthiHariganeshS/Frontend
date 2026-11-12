@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid{
+            display:grid;
+            gap:5px;
+            grid-template-areas: "a1 a2 a3"
+                              "a4 a5 a6"
+                              "a7 a8 a9"
+                              "a10 a10 a10";
+           
+        }
+        .one{
+            grid-area: a1;
+           
+        }
+        .two{
+            grid-area: a2;
+            
+        }
+        .three{
+            grid-area: a3;
+            background-color: green;
+        }
+        .four{
+            grid-area: a4;
+            background-color: green;
+        }
+        .five{
+            grid-area: a5;
+            background-color: green;
+        }
+        .six{
+            grid-area: a6;
+            background-color: green;
+        }
+        .seven{
+            grid-area: a7;
+            background-color: green;
+        }
+        .eight{
+            grid-area: a8;
+            background-color: green;
+        }
+        .nine{
+            grid-area: a9;
+            background-color: green;
+        }
+        .ten{
+            grid-area: a10;
+            background-color: green;
+        }
+        
+       </style>
+       </head>
+       <body>
+        <header>
+            <h1>Grid Areas</h1>
+        
+       
+        </header>
+        <div class="grid">
+        <h1 class="one" >ONE</h1>
+        <h1 class="two">TWO</h1>
+        <h1 class="three">THREE</h1>
+        <h1 class="four">FOUR</h1>
+        <h1 class="five">FIVE</h1>
+        <h1 class="six">SIX</h1>
+        <h1 class="seven">SEVEN</h1>
+        <h1 class="eight">EIGHT</h1>
+        <h1 class="nine">NINE</h1>
+        <h1 class="ten">TEN</h1>
+        </div>
+       </body>
